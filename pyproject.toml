@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "uk-ai-bill-compliance-mcp"
+version = "1.0.0"
+description = "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles (safety, transparency, fairness, accountability, contestability), upcoming AI (Regulation) Bill frontier-model obligations, Algorithmic Transparency Recording Standard, and sector-regulator guidance (ICO, FCA, MHRA, CMA, Ofcom, HSE). HMAC-signed readiness attestations for UK public-sector + CCS / Digital Marketplace procurement. By MEOK AI Labs."
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]
+keywords = ["mcp", "uk-ai-bill", "uk-ai-regulation", "white-paper", "five-principles", "ico", "fca", "mhra", "cma", "ofcom", "aisi", "algorithmic-transparency-recording-standard", "atrs", "ai-compliance", "signed-attestation", "meok-ai-labs"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Topic :: Office/Business"]
+dependencies = ["mcp>=1.0.0"]
+
+[project.urls]
+Homepage = "https://meok.ai/uk-ai-bill-compliance-mcp"
+Repository = "https://github.com/CSOAI-ORG/uk-ai-bill-compliance-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["server.py"]
+
+[project.scripts]
+uk-ai-bill-compliance-mcp = "server:main"
