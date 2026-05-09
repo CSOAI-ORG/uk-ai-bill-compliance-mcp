@@ -70,6 +70,8 @@ Need UK + EU coverage in one platform? **[councilof.ai](https://councilof.ai)** 
 - [`csrd-compliance-mcp`](https://pypi.org/project/csrd-compliance-mcp/) — EU CSRD
 - [`meok-attestation-verify`](https://pypi.org/project/meok-attestation-verify/) — zero-dep verifier
 
+> **If this tool helps your compliance workflow, please [star this repo](https://github.com/CSOAI-ORG/uk-ai-bill-compliance-mcp/stargazers)** — it helps other teams find it.
+
 ## License
 
 MIT — [MEOK AI Labs](https://meok.ai), 2026.
