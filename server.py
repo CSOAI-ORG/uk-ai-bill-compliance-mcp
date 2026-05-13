@@ -89,9 +89,9 @@ def _sign_via_api(api_key: str, regulation: str, entity: str, score: float,
         try:
             return json.loads(e.read())
         except Exception:
-            return {"error": f"Attestation API HTTP {e.code}. Contact nicholas@csoai.org."}
+            return {"error": f"Attestation API HTTP {e.code}. Contact hello@meok.ai."}
     except Exception as e:
-        return {"error": f"Could not reach MEOK attestation API: {e}. Contact nicholas@csoai.org."}
+        return {"error": f"Could not reach MEOK attestation API: {e}. Contact hello@meok.ai."}
 
 
 def _attestation(regulation, entity, score, findings, articles_audited, tier,

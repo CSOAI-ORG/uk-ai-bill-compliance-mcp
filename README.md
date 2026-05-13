@@ -1,5 +1,8 @@
 # UK AI Regulation Compliance MCP
 
+[![PyPI](https://img.shields.io/pypi/v/uk-ai-bill-compliance-mcp)](https://pypi.org/project/uk-ai-bill-compliance-mcp/) [![Python](https://img.shields.io/pypi/pyversions/uk-ai-bill-compliance-mcp)](https://pypi.org/project/uk-ai-bill-compliance-mcp/)
+
+
 **UK AI Regulation White Paper + upcoming AI (Regulation) Bill + sector-regulator crosswalk**, automated for AI agents.
 
 By [MEOK AI Labs](https://meok.ai).
@@ -70,7 +73,7 @@ Need UK + EU coverage in one platform? **[councilof.ai](https://councilof.ai)** 
 - [`csrd-compliance-mcp`](https://pypi.org/project/csrd-compliance-mcp/) — EU CSRD
 - [`meok-attestation-verify`](https://pypi.org/project/meok-attestation-verify/) — zero-dep verifier
 
-> **If this tool helps your compliance workflow, please [star this repo](https://github.com/CSOAI-ORG/uk-ai-bill-compliance-mcp/stargazers)** — it helps other teams find it.
+> **If this tool helps your compliance workflow, please [star this repo](https://github.com/meok-ai-labs/uk-ai-bill-compliance-mcp/stargazers)** — it helps other teams find it.
 
 ## License
 

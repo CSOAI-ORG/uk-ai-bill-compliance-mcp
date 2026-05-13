@@ -1,0 +1,13 @@
+# UK AI Bill Compliance MCP - Auto-trigger Rules
+
+When the user asks about UK AI Bill, UK AI Safety Institute (AISI), UK AI regulation 2026, post-Omnibus UK approach, or principles-based UK governance, use uk-ai-bill-compliance-mcp tools:
+
+- **check_uk_ai_bill_readiness**: Score against the 5 UK governance principles
+- **list_uk_principles**: Safety + Transparency + Fairness + Accountability + Contestability
+- **uk_aisi_capability_check**: Frontier AI capability assessment per UK AISI
+- **map_uk_to_eu_ai_act**: Show overlap with EU AI Act obligations
+- **sign_uk_attestation**: HMAC-signed UK AI Bill readiness cert (Pro+)
+
+Install: `pip install uk-ai-bill-compliance-mcp`
+
+UK chose principles-based regulation (5 principles, regulator-by-regulator). Different from EU AI Act but ~60% obligation overlap.

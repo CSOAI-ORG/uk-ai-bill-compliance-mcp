@@ -1,0 +1,42 @@
+# uk-ai-bill-compliance-mcp
+# Purpose: UK AI Bill 2026 compliance — principles-based (Safety, Transparency, Fairness, Accountability, Contestability).
+# Context: UK chose principles-based regulation, different from EU AI Act. ~60% obligation overlap.
+
+## Install
+```bash
+pip install uk-ai-bill-compliance-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations. https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836
+- Enterprise (£1,499/mo): white-label + on-premise. hello@meok.ai
+- All tools accept optional `api_key` parameter.
+
+## Tools (6)
+
+### `classify_system(sector: str, system_type: str, public_sector: bool = False, is_frontier_model: bool = False)`
+Classify a UK AI system against sector regulator + signalled AI Bill scope.
+
+### `audit_principle(principle: str, current_controls_csv: str = "")`
+Audit the entity's current controls against one of the 5 UK AI principles.
+
+### `audit_sector_regulator(sector: str)`
+Surface the primary sector regulator + key guidance for an AI system in that sector.
+
+### `ai_bill_readiness(entity_name: str, is_frontier_model: bool, has_pre_deployment_eval: bool = False, has_aisi_engagement: bool = False, has_incident_reporting: bool = False, has_misuse_mitigation_plan: bool = False, has_senior_accountable_person: bool = False)`
+Score readiness against anticipated AI (Regulation) Bill obligations.
+
+### `sign_uk_ai_readiness_attestation(entity_name: str, overall_score: float, principles_audited_csv: str = "safety, transparency, fairness, accountability, contestability", findings_csv: str = "", include_pdf_base64: bool = False)`
+Generate a cryptographically signed UK AI readiness attestation (Pro/Enterprise).
+
+### `enforcement_status((none))`
+Current UK AI regulation status + upcoming AI (Regulation) Bill timeline.
+
+## Pairs with
+- `meok-attestation-verify` — public verification of signed certs
+- `meok-attestation-api` (https://meok-attestation-api.vercel.app) — HMAC signing endpoint
+- Other MEOK governance MCPs via `mcp_bridge_call`
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
