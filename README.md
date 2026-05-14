@@ -75,3 +75,5 @@ Need UK + EU coverage in one platform? **[councilof.ai](https://councilof.ai)** 
 ## License
 
 MIT — [MEOK AI Labs](https://meok.ai), 2026.
+
+<!-- mcp-name: io.github.CSOAI-ORG/uk-ai-bill-compliance-mcp -->
