@@ -1,5 +1,12 @@
 # UK AI Regulation Compliance MCP
 
+
+> ## Buy Starter — £29/mo
+> **Signed attestations + unlimited audits + email support.**
+> 👉 **[Subscribe at meok.ai](https://buy.stripe.com/cNi4gB80kdQS9wpdCU8k83X)** — instant HMAC signing key + Stripe-managed billing.
+>
+> Free tier remains MIT-licensed and zero-config. Upgrade only when you need signed compliance artefacts for audit.
+
 [![PyPI](https://img.shields.io/pypi/v/uk-ai-bill-compliance-mcp)](https://pypi.org/project/uk-ai-bill-compliance-mcp/) [![Python](https://img.shields.io/pypi/pyversions/uk-ai-bill-compliance-mcp)](https://pypi.org/project/uk-ai-bill-compliance-mcp/)
 
 
@@ -78,5 +85,19 @@ Need UK + EU coverage in one platform? **[councilof.ai](https://councilof.ai)** 
 ## License
 
 MIT — [MEOK AI Labs](https://meok.ai), 2026.
+
+
+## Sister MCPs
+
+Part of the MEOK **Governance** pack — designed to work together as a fleet. Install the whole pack with `npx meok-setup --pack governance`, or pick the ones you need:
+
+- **EU AI Act** → `uvx eu-ai-act-compliance-mcp` · [PyPI](https://pypi.org/project/eu-ai-act-compliance-mcp/) · [GitHub](https://github.com/CSOAI-ORG/eu-ai-act-compliance-mcp)
+- **DORA** → `uvx dora-compliance-mcp` · [PyPI](https://pypi.org/project/dora-compliance-mcp/) · [GitHub](https://github.com/CSOAI-ORG/dora-compliance-mcp)
+- **NIS2** → `uvx nis2-compliance-mcp` · [PyPI](https://pypi.org/project/nis2-compliance-mcp/) · [GitHub](https://github.com/CSOAI-ORG/nis2-compliance-mcp)
+- **Cyber Resilience Act** → `uvx cra-compliance-mcp` · [PyPI](https://pypi.org/project/cra-compliance-mcp/) · [GitHub](https://github.com/CSOAI-ORG/cra-compliance-mcp)
+- **AI Bill of Materials** → `uvx ai-bom-mcp` · [PyPI](https://pypi.org/project/ai-bom-mcp/) · [GitHub](https://github.com/CSOAI-ORG/ai-bom-mcp)
+- **AI Incident Reporting** → `uvx ai-incident-reporting-mcp` · [PyPI](https://pypi.org/project/ai-incident-reporting-mcp/) · [GitHub](https://github.com/CSOAI-ORG/ai-incident-reporting-mcp)
+
+Full catalogue + Anthropic Registry verify links: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
 
 <!-- mcp-name: io.github.CSOAI-ORG/uk-ai-bill-compliance-mcp -->
