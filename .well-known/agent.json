@@ -1,0 +1,77 @@
+{
+  "name": "uk-ai-bill-compliance-mcp",
+  "description": "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles ...",
+  "url": "https://proofof.ai/scorecard/uk-ai-bill-compliance-mcp.html",
+  "version": "1.0.4",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "classify_system",
+      "name": "Classify System",
+      "description": "classify_system via uk-ai-bill-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "audit_principle",
+      "name": "Audit Principle",
+      "description": "audit_principle via uk-ai-bill-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "audit_sector_regulator",
+      "name": "Audit Sector Regulator",
+      "description": "audit_sector_regulator via uk-ai-bill-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ai_bill_readiness",
+      "name": "Ai Bill Readiness",
+      "description": "ai_bill_readiness via uk-ai-bill-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_uk_ai_readiness_attestation",
+      "name": "Sign Uk Ai Readiness Attestation",
+      "description": "sign_uk_ai_readiness_attestation via uk-ai-bill-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "enforcement_status",
+      "name": "Enforcement Status",
+      "description": "enforcement_status via uk-ai-bill-compliance-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

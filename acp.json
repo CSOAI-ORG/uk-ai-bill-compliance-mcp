@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "uk-ai-bill-compliance-mcp",
+    "description": "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles ...",
+    "version": "1.0.4",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "uk-ai-bill-compliance-mcp"
+      }
+    ],
+    "capabilities": [
+      "classify_system",
+      "audit_principle",
+      "audit_sector_regulator",
+      "ai_bill_readiness",
+      "sign_uk_ai_readiness_attestation",
+      "enforcement_status"
+    ]
+  }
+}
