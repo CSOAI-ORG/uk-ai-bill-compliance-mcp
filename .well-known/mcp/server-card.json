@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "name": "uk-ai-bill-compliance-mcp",
+  "version": "1.0.0",
+  "title": "UK AI Bill Compliance",
+  "description": "UK AI Bill 2026 \u2014 5 principles (Safety, Transparency, Fairness, Accountability, Contestability).",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/meok-ai-labs/uk-ai-bill-compliance-mcp",
+  "license": "MIT",
+  "author": {
+    "name": "MEOK AI Labs",
+    "email": "hello@meok.ai",
+    "url": "https://meok.ai"
+  },
+  "categories": [
+    "governance"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-governance",
+    "compliance",
+    "meok"
+  ],
+  "support_url": "https://github.com/meok-ai-labs",
+  "contact_email": "hello@meok.ai",
+  "endpoints": {
+    "free_tier": {
+      "calls_per_day": 10
+    },
+    "pro": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K",
+    "enterprise": "hello@meok.ai"
+  }
+}

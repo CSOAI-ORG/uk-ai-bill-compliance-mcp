@@ -1,17 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.meok-ai-labs/uk-ai-bill-compliance-mcp",
-  "description": "UK AI Bill 2026 compliance + DSIT guidance crosswalk \u2014 by MEOK AI Labs.",
+  "name": "io.github.CSOAI-ORG/uk-ai-bill-compliance-mcp",
+  "version": "1.0.3",
+  "description": "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles ...",
   "repository": {
-    "url": "https://github.com/meok-ai-labs/uk-ai-bill-compliance-mcp",
+    "url": "https://github.com/CSOAI-ORG/uk-ai-bill-compliance-mcp",
     "source": "github"
   },
-  "version": "1.0.0",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "uk-ai-bill-compliance-mcp",
-      "version": "1.0.0",
+      "version": "1.0.3",
+      "runtimeHint": "python",
       "transport": {
         "type": "stdio"
       }

@@ -1,0 +1,32 @@
+name: uk-ai-bill-compliance-mcp
+description: 'MCP server: uk-ai-bill-compliance-mcp'
+version: 1.0.5
+author: MEOK AI Labs
+homepage: https://safetyof.ai
+repository: https://github.com/MEOK-AI-Labs/uk-ai-bill-compliance-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: classify_system
+  description: Classify a UK AI system against sector regulator + signalled AI Bill
+    scope.
+- name: audit_principle
+  description: Audit the entity's current controls against one of the 5 UK AI principles.
+- name: audit_sector_regulator
+  description: Surface the primary sector regulator + key guidance for an AI system
+    in that sector.
+- name: ai_bill_readiness
+  description: Score readiness against anticipated AI (Regulation) Bill obligations.
+- name: sign_uk_ai_readiness_attestation
+  description: Generate a cryptographically signed UK AI readiness attestation (Pro/Enterprise).
+- name: enforcement_status
+  description: Current UK AI regulation status + upcoming AI (Regulation) Bill timeline.
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'

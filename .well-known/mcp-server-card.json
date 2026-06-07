@@ -1,0 +1,31 @@
+{
+  "name": "uk-ai-bill-compliance-mcp",
+  "title": "Uk Ai Bill Compliance Mcp",
+  "description": "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles (safety, transparency, fairness, accountability, contestability), upcoming AI (Regulation) Bill frontier-model obligations, Algorithmic Transparency Recording Standard, and sector-regulator guidance (ICO, FCA, MHRA, CMA, Ofcom, HSE). HMAC-signed readiness attestations for UK public-sector + CCS / Digital Marketplace procurement. By MEOK AI Labs.",
+  "version": "1.0.4",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "classify_system"
+    },
+    {
+      "name": "audit_principle"
+    },
+    {
+      "name": "audit_sector_regulator"
+    },
+    {
+      "name": "ai_bill_readiness"
+    },
+    {
+      "name": "sign_uk_ai_readiness_attestation"
+    },
+    {
+      "name": "enforcement_status"
+    }
+  ]
+}
