@@ -1,32 +1,37 @@
-name: uk-ai-bill-compliance-mcp
-description: 'MCP server: uk-ai-bill-compliance-mcp'
-version: 1.0.5
-author: MEOK AI Labs
-homepage: https://safetyof.ai
-repository: https://github.com/MEOK-AI-Labs/uk-ai-bill-compliance-mcp
-license: MIT
-categories:
-- compliance
-- governance
-tools:
-- name: classify_system
-  description: Classify a UK AI system against sector regulator + signalled AI Bill
-    scope.
-- name: audit_principle
-  description: Audit the entity's current controls against one of the 5 UK AI principles.
-- name: audit_sector_regulator
-  description: Surface the primary sector regulator + key guidance for an AI system
-    in that sector.
-- name: ai_bill_readiness
-  description: Score readiness against anticipated AI (Regulation) Bill obligations.
-- name: sign_uk_ai_readiness_attestation
-  description: Generate a cryptographically signed UK AI readiness attestation (Pro/Enterprise).
-- name: enforcement_status
-  description: Current UK AI regulation status + upcoming AI (Regulation) Bill timeline.
-build:
-  type: python
-  entrypoint: server.py
-  dependencies:
-  - mcp>=1.0.0
-runtime:
-  python: '>=3.10'
+# smithery.yaml — Smithery (https://smithery.ai) submission payload
+# Repo: CSOAI-ORG/uk-ai-bill-compliance-mcp
+# Generated: 2026-06-09
+# Transport: stdio (PyPI package, installed via uvx)
+# See: DISTRIBUTION_GAPS_2026-06-08.md for the channel strategy
+startCommand:
+  type: stdio
+  timeout: 120000
+  pingInterval: 5000
+  pingTimeout: 30000
+  configSchema:
+    type: object
+    required: []
+    properties:
+      apiKey:
+        type: string
+        description: "MEOK API key (optional; required for x402 paywalled tools)"
+        default: ""
+      x402PayTo:
+        type: string
+        description: "USDC address for x402 micropayments (default: meok.ai wallet)"
+        default: ""
+      logLevel:
+        type: string
+        description: "Log level (debug, info, warn, error)"
+        default: "info"
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({
+      command: 'uvx',
+      args: ['uk_ai_bill_compliance'],
+      env: {
+        MEOK_API_KEY: config.apiKey || '',
+        X402_PAY_TO: config.x402PayTo || '',
+        MEOK_LOG_LEVEL: config.logLevel || 'info',
+      }
+    })
