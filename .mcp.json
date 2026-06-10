@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "uk-ai-bill-compliance-mcp": {
+      "command": "uvx",
+      "args": [
+        "uk-ai-bill-compliance-mcp"
+      ]
+    }
+  }
+}
