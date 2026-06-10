@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/uk-ai-bill-compliance-mcp",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles ...",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/uk-ai-bill-compliance-mcp",
@@ -11,7 +11,7 @@
     {
       "registryType": "pypi",
       "identifier": "uk-ai-bill-compliance-mcp",
-      "version": "1.0.3",
+      "version": "1.0.6",
       "runtimeHint": "python",
       "transport": {
         "type": "stdio"
