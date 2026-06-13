@@ -1,0 +1,128 @@
+{
+  "name": "Uk Ai Bill Compliance Mcp",
+  "version": "1.0.4",
+  "url": "https://mcp.meok.ai/uk-ai-bill-compliance-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "UK AI Regulation Compliance MCP. Automates audits against the UK AI White Paper five principles (safety, transparency, fairness, accountability, contestability), upcoming AI (Regulation) Bill frontier-model obligations, Algorithmic Transparency Recording Standard, and sector-regulator guidance (ICO, FCA, MHRA, CMA, Ofcom, HSE). HMAC-signed readiness attestations for UK public-sector + CCS / Digital Marketplace procurement. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "classify_system",
+      "name": "Classify System",
+      "description": "Classify System — a tool of the uk-ai-bill-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "audit_principle",
+      "name": "Audit Principle",
+      "description": "Audit Principle — a tool of the uk-ai-bill-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "audit_sector_regulator",
+      "name": "Audit Sector Regulator",
+      "description": "Audit Sector Regulator — a tool of the uk-ai-bill-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "ai_bill_readiness",
+      "name": "Ai Bill Readiness",
+      "description": "Ai Bill Readiness — a tool of the uk-ai-bill-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_uk_ai_readiness_attestation",
+      "name": "Sign Uk Ai Readiness Attestation",
+      "description": "Sign Uk Ai Readiness Attestation — a tool of the uk-ai-bill-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "enforcement_status",
+      "name": "Enforcement Status",
+      "description": "Enforcement Status — a tool of the uk-ai-bill-compliance-mcp MCP.",
+      "tags": [
+        "compliance"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "uk-ai-bill-compliance-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
