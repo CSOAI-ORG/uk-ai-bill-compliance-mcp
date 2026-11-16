@@ -114,9 +114,9 @@ def check_access(api_key: str = ""):
 
 FREE_DAILY_LIMIT = 50
 _usage: dict[str, list[datetime]] = defaultdict(list)
-STRIPE_199 = "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"
-STRIPE_1499 = "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"
-STRIPE_5K = "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"
+STRIPE_199 = "https://meok.ai/pricing"
+STRIPE_1499 = "https://meok.ai/pricing"
+STRIPE_5K = "https://meok.ai/pricing"
 
 
 def _rl(tier: str = "free") -> Optional[str]:
@@ -126,7 +126,7 @@ def _rl(tier: str = "free") -> Optional[str]:
     cutoff = now - timedelta(days=1)
     _usage["anonymous"] = [t for t in _usage["anonymous"] if t > cutoff]
     if len(_usage["anonymous"]) >= FREE_DAILY_LIMIT:
-        return f"Free tier limit ({FREE_DAILY_LIMIT}/day). Pro £199/mo: {STRIPE_199}"
+        return f"Free tier limit ({FREE_DAILY_LIMIT}/day). Pro a per-job quote: {STRIPE_199}"
     _usage["anonymous"].append(now)
     return None
 
@@ -336,7 +336,7 @@ def classify_system(
             "If public-sector: open an ATRS record",
             "If frontier-model: engage AISI + prepare for Bill obligations",
         ],
-        "upsell_pro": f"Unlimited classification + signed UK AI readiness attestation: Pro £199/mo at {STRIPE_199}" if tier == "free" else None,
+        "upsell_pro": f"Unlimited classification + signed UK AI readiness attestation: Pro a per-job quote at {STRIPE_199}" if tier == "free" else None,
     }, indent=2)
 
 
@@ -447,7 +447,7 @@ def ai_bill_readiness(
         "gaps": gaps,
         "anticipated_obligations": AI_BILL_ANTICIPATED_SCOPE["anticipated_obligations"],
         "anticipated_timeline": AI_BILL_ANTICIPATED_SCOPE["likely_timeline"],
-        "upsell_pro": f"Generate a signed UK AI Bill readiness attestation and quarterly re-score: Pro £199/mo at {STRIPE_199}" if tier == "free" else None,
+        "upsell_pro": f"Generate a signed UK AI Bill readiness attestation and quarterly re-score: Pro a per-job quote at {STRIPE_199}" if tier == "free" else None,
     }, indent=2)
 
 
@@ -470,7 +470,7 @@ def sign_uk_ai_readiness_attestation(
         return json.dumps({"error": msg, "upgrade_url": STRIPE_199})
     if tier == "free":
         return json.dumps({
-            "error": "Signed attestations require Pro (£199/mo) or Enterprise tier.",
+            "error": "Signed attestations require Pro or Enterprise tier.",
             "upgrade_url": STRIPE_199,
             "why_pro": "HMAC-signed attestation with public verify URL. UK procurement-ready (Digital Marketplace, CCS frameworks, public-sector ATRS).",
         })
@@ -507,7 +507,7 @@ def enforcement_status(api_key: str = "") -> str:
             "AI Safety Institute frontier model evaluation MoU (signatories include Anthropic, Google DeepMind, Microsoft, OpenAI, Meta, Amazon)",
             "Bletchley Declaration (November 2023) + Seoul Declaration (May 2024)",
         ],
-        "pro_upsell": f"Unlimited audits + signed UK AI readiness attestations at £199/mo: {STRIPE_199}",
+        "pro_upsell": f"Unlimited audits + signed UK AI readiness attestations at a per-job quote: {STRIPE_199}",
     }, indent=2)
 
 
@@ -520,10 +520,10 @@ if __name__ == "__main__":
     main()
 
 
-# ── MEOK monetization layer (Stripe upgrade · PAYG · pricing) ──────────
-# Free tier is zero-config. Upgrade to Pro (unlimited) or pay-as-you-go per call.
+# ── MEOK pricing pointer (pay per delivered job; no subscriptions) ──────────
+# No tiers. Jobs are quoted individually at https://meok.ai/pricing.
 import os as _meok_os
-MEOK_STRIPE_UPGRADE = "https://buy.stripe.com/aFa7sNcgAdQS0ZT1Uc8k91t"  # Pro (unlimited)
+MEOK_STRIPE_UPGRADE = "https://meok.ai/pricing"  # Pro (unlimited)
 MEOK_PAYG_KEY = _meok_os.environ.get("MEOK_PAYG_KEY", "")  # set to enable PAYG (x402 / ~GBP0.05 per call)
 MEOK_PRICING = "https://meok.ai/pricing"
 
